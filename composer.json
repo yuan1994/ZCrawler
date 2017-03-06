@@ -1,0 +1,44 @@
+{
+  "name": "yuan1994/z-crawler",
+  "description": "【正方教务】爬虫，支持成绩查询、考试查询、课表查询、四六级成绩查询、四六级报名、选课查询、修改密码、获取用户菜单等功能，并且解析数据成易读格式，符合 psr 规范，拿来即用",
+  "keywords": [
+    "zcrawler",
+    "zfjw",
+    "正方教务",
+    "正方",
+    "模拟登录",
+    "模拟登陆",
+    "爬虫",
+    "crawler",
+    "grade",
+    "exam",
+    "schedule",
+    "cet",
+    "zhengfangjiaowu"
+  ],
+  "license": "Apache 2.0",
+  "authors": [
+    {
+      "name": "yuan1994",
+      "email": "tianpian0805@gmail.com"
+    }
+  ],
+  "require": {
+    "php":">=5.5.0",
+    "monolog/monolog": "^1.22",
+    "pimple/pimple": "^3.0",
+    "doctrine/cache": "^1.6",
+    "guzzlehttp/guzzle": "^6.2",
+    "symfony/dom-crawler": "^3.2",
+    "symfony/css-selector": "^3.2"
+  },
+  "require-dev": {
+
+  },
+  "minimum-stability" : "dev",
+  "autoload": {
+    "psr-4": {
+      "ZCrawler\\": "src/"
+    }
+  }
+}
