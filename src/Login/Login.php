@@ -167,7 +167,7 @@ class Login extends AbstractAPIBase
         $response = $this->request('get', [$url, [], $options]);
 
         // Check the StatusCode
-        if ($response->getStatusCode() == 200) {
+        if ($response->getStatusCode() != 200) {
             throw new HttpException('get the captcha failed!', 10005);
         }
 
